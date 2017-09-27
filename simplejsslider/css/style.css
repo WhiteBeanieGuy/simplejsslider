@@ -1,0 +1,61 @@
+.slideContainer {
+  width: 100%;
+  background-color: purple;
+  padding: 5px 0px;
+}
+.slideContainer .slideRow {
+  margin: 0px auto;
+  padding: 0px;
+  background-color: orange;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+
+}
+.slideContainer .slideRow .slide {
+  margin: 0px;
+  padding: 0px;
+  /*border: 1px solid black;*/
+  text-align: center;
+  height: 450px;
+  width: 960px;
+  display: inline-block;
+}
+.slideContainer .slideRow .slide span {
+  font-size: 3em;
+  vertical-align: middle;
+  line-height: 450px;
+}
+.slideContainer .slideRow .slide:nth-child(1) {
+  background-color: red;
+}
+.slideContainer .slideRow .slide:nth-child(2) {
+  background-color: green;
+}
+.slideContainer .slideRow .slide:nth-child(3) {
+  background-color: blue;
+}
+
+/* SLIDE Navigator */
+.slideContainer .slideNav {
+  width: 100%;
+  text-align: center;
+  padding: 5px;
+  background-color: #ccc;
+  margin-top: 5px;
+}
+.slideContainer .slideNav .slideNavPrev,
+.slideContainer .slideNav .slideNavNext  {
+  font-size: 3em;
+  padding: 0px 20px;
+}
+.slideContainer .slideNav .slideNavPrev:hover,
+.slideContainer .slideNav .slideNavNext:hover  {
+  cursor: pointer;
+  color: #aaa;
+}
+.slideContainer .slideNav .slideNavPrev:active,
+.slideContainer .slideNav .slideNavNext:active  {
+  cursor: pointer;
+  color: #e00;
+}
